@@ -3,7 +3,8 @@ live :https://hospital-management-system-henna.vercel.app/
 Build a healthcare platform that streamlines patient registration, appointment scheduling, and medical records, and learn to implement complex forms and SMS notifications.
 <div align="center">
   <br />
-   ![image](https://github.com/user-attachments/assets/abfca62f-1ec4-45cb-be7d-c827bd445205)
+  ![image](https://github.com/user-attachments/assets/9b7a7a49-7294-4625-b449-3b8c21b3169f)
+
 
   <br />
 
@@ -24,11 +25,6 @@ Build a healthcare platform that streamlines patient registration, appointment s
 6. 🔗 [Assets](#links)
 7. 🚀 [More](#more)
 
-## 🚨 Tutorial
-
-This repository contains the code corresponding to an in-depth 
-
-If you prefer visual learning, this is the perfect resource for you.
 
 ## <a name="introduction">🤖 Introduction</a>
 
