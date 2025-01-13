@@ -2,10 +2,12 @@ import { RegisterForm } from "@/components/forms/RegisterForm"
 import { getUser } from "@/lib/actions/patient.actions"
 import Image from "next/image"
 import Link from "next/link"
+import * as Sentry from "@sentry/nextjs"
 
 const Registration=async({params:{userId}}:SearchParamProps)=>{
 const user=await getUser(userId)
 
+Sentry.metrics.set('user_view',user.name)
     return(
       <div className="flex h-screen max-h-screen">
       
@@ -18,11 +20,9 @@ const user=await getUser(userId)
               alt="patient"
               className="mb-12 h-10 w-fit"
          />
-        <RegisterForm user={user}/>         
-         <div className="text-14-regular mt-20 flex justify-between">
-         <p className="justify-items-end text-dark-600 xl:text-left">© 2024 health care</p>
-         <Link href="/?admin=true" className="text-orange-500">Admin</Link>
-         </div>
+        <RegisterForm user={user}/>
+          <p className="py-12 mt-10 copyright">© 2024 health care
+            </p>        
              </div>
            </section>
            <Image

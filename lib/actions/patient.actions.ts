@@ -68,6 +68,7 @@ export const registerPatient = async ({ identificationDocument, ...patient }: Re
       // Upload the file to Appwrite
       file = await storage.createFile(BUCKET_ID!, ID.unique(), fileObject);
     }
+// console.log({gender:patient.gender})
 
     const newPatient = await databases.createDocument(
       DATABASE_ID!,
